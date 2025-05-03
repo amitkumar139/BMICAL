@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI OR CODE </title>
+    <style>
+        .btn{
+            display: inline-block;
+        }
+        #orange{
+            /* display: block; */
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #white{
+            /* display: block; */
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #green{
+            /* display: block; */
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #yellow{
+            /* display: block; */
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #blue{
+            /* display: block; */
+            height: 100px;
+            width: 100px;
+            background-color:blue;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .box{
+            display:flex;
+            justify-content: center;
+               align-content: center;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="btn" id="orange">orange</span>
+        <span class="btn" id="white">white</span>
+        <span class="btn" id="green">green</span>
+        <span class="btn" id="yellow">yellow</span>
+        <span class="btn" id="blue">blue</span>
+    </div>
+    
+</body>
+<script>
+    const btn=document.querySelectorAll(".btn");
+    const body=document.querySelector("body");
+    btn.forEach( function(btn1){
+        btn1.addEventListener("click", function(e){
+            // console.log(e);
+            console.log(e.target);
+            if(e.target.id==="orange"){
+                body.style.backgroundColor=e.target.id
+            }
+            if(e.target.id==="white"){
+                body.style.backgroundColor=e.target.id
+            }
+            if(e.target.id==="green"){
+                body.style.backgroundColor=e.target.id
+            }
+            if(e.target.id==="yellow"){
+                body.style.backgroundColor=e.target.id
+            }
+            if(e.target.id==="blue"){
+                body.style.backgroundColor=e.target.id
+            }
+            
+            
+        })
+        
+    })
+</script>
+</html>
